@@ -22,8 +22,8 @@ class parser(object):
     def search_image(self, image_name):
         '''Поиск и сохранение страницы с картинками'''
 
-        options = FirefoxOptions() # инициализация Гекодрайвера
-        options.add_argument("--headless") # настройки для запуска без открытия браузера
+        options = FirefoxOptions() # инициализация настроек для браузера
+        options.add_argument("--headless") # указывем заголовок для запуска скрипта без открытия окна браузера
 
         gecko = os.path.normpath(os.path.join(os.path.dirname(__file__), 'geckodriver'))
         binary = FirefoxBinary(r'C:\Program Files\Mozilla Firefox\firefox.exe')
